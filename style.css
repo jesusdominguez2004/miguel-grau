@@ -13,6 +13,10 @@ p {
     color: #111;
 }
 
+body {
+    min-height: 1000px;
+}
+
 .banner {
     position: relative;
     width: 100%;
@@ -69,6 +73,12 @@ header {
     transition: 0.5s;
 }
 
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
 header .logo {
     color: #fff;
     font-weight: 700;
@@ -76,6 +86,34 @@ header .logo {
     text-decoration: none;
 }
 
+header.sticky .logo {
+    color: #111;
+}
+
 header .logo span {
+    color: #ff0157;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header .navigation li a:hover {
     color: #ff0157;
 }
