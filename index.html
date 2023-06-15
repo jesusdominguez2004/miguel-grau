@@ -223,11 +223,16 @@
             header.classList.toggle("sticky", window.scrollY > 0);
         });
 
-        function toggleMenu () {
+        function toggleMenu() {
             const menuToggle = document.querySelector(".menuToggle");
             const navigation = document.querySelector(".navigation");
             menuToggle.classList.toggle("active");
             navigation.classList.toggle("active");
+            if (navigation.classList.contains("active")) {
+                document.body.style.overflow = "hidden";
+            } else {
+                document.body.style.overflow = "auto"
+            }
         }
     </script>
 </body>
